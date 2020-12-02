@@ -1,0 +1,77 @@
+body .customModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8) !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    font-size: 25px;
+    z-index: 5;
+    outline: none;
+
+}
+
+.close {
+    color: black;
+}
+
+.close:hover {
+    background-color: white;
+    color: black;
+  }
+
+.eventLogoContainer {
+    position: fixed;
+    top: 10%;
+    right: -1.5rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 4;
+    background-color: transparent;
+    outline: none;
+    border: inherit;
+
+    animation-duration: 1s;
+    animation-name: reverse;
+    animation-fill-mode: forwards;
+}
+
+.eventLogoContainer img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.eventLogoContainer:hover {
+    animation-duration: 1s;
+    animation-name: show-hide;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-hide {
+    from {
+        right: -1.5rem;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes reverse {
+    from {
+        right: 0;
+    }
+    to {
+        right: -1.5rem;
+    }
+}
+
+.modal-body {
+    max-width: 400px;
+}
+
+h5 {
+    font-size: 30px;
+}
